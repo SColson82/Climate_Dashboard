@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latitude Analysis Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="bootstrap.min.css"> 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
@@ -12,25 +14,82 @@
 
 <body>
 
-    <!--Navbar adjustments-->
+    <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <h1>Latitude</h1>  
-            Plots
-            Comparison
-            Data
+        <a class="navbar-brand text-white" href="index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                       <a class="dropdown item" href="#">Max Temperature</a>
+                       <a class="dropdown-item" href="#">Humidity</a>
+                       <a class="dropdown-item" href="#">Cloudiness</a> 
+                       <a class="dropdown-item" href="#">Wind Speed</a> 
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+            </ul>
+        </div>
         </div>
     </nav>
-            <h1>Summary: Latitude vs. X</h1>
-            <h1>Visualizations</h1>
-            <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMan API to assemble a dataset on over 500 cities.</p>
-            <p>After assembling the dataset, we used Matplotlib to plot various aspexts of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
-            <img src="C:\Users\Sharon\datacode\Web-Design-Challenge\Resources\assets\images\Fig1.png" alt="Latitude vs. Max Temp">
-            <img src="C:\Users\Sharon\datacode\Web-Design-Challenge\Resources\assets\images\Fig1.png" alt="Latitude vs. Max Temp">
-            <img src="C:\Users\Sharon\datacode\Web-Design-Challenge\Resources\assets\images\Fig2.png" alt="Latitude vs. Humidity">
-            <img src="C:\Users\Sharon\datacode\Web-Design-Challenge\Resources\assets\images\Fig3.png" alt="Latitude vs. Cloudiness">
-            <img src="C:\Users\Sharon\datacode\Web-Design-Challenge\Resources\assets\images\Fig4.png" alt="Latitude vs. Wind Speed">
-
-        
+        <!-- Begin page content -->
+    <main role="main" class="flex-shrink-0">
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12 ">
+                    <div class="clear-fix">
+                        <h1>Summary: Latitude vs. X</h1>
+                        <hr>
+                        <a href="temp.html"><img src="Resources/Assets/images/Fig1.png" class="main-image"
+                            alt="Latitude vs Max Temperature(F)"></a>
+                        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMan API to assemble a dataset on over 500 cities.</p>
+                        <br>
+                        <p>After assembling the dataset, we used Matplotlib to plot various aspexts of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                    </div>
+                </div>
+                <aside>
+                <div class="h-100">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="container">
+                      <h2>Visualizations</h2>
+                      <hr>
+                      <div class="container">
+                        <div class="row visualizations-row">
+                            <div class="col">
+                                <a href="temp.html"><img src="Resources/Assets\images\Fig1.png" class="img-fluid" alt="Latitude vs. Max Temp(F)"></a>
+                            </div>
+                            <div class="col">
+                                <a href="humidity.html"> <img src="Resources/Assets/images/Fig2.png" class="img-fluid"
+                                    alt="Latitude vs Humidity">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="cloudiness.html"> <img src="Resources/Assets/images/Fig3.png" class="img-fluid"
+                                    alt="Latitude vs Cloudiness"> </a>
+                            </div>
+                            <div class="col">
+                                <a href="windspeed.html"> <img src="Resources/Assets/images/Fig4.png" class="img-fluid"
+                                    alt="Latitude vs Wind Speed"> </a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </aside>   
+            </div>
+        </div>
+    </main>
 </body>
 </html>
