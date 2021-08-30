@@ -9,6 +9,13 @@ body {
 	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+a {
+	color:#1c1c1c;
+}
+
+li {
+	color:#1c1c1c;
+}
 
 h1 {
 	color: var(--green);
@@ -25,13 +32,9 @@ h2 {
 }
 
 .navbar {
-	padding: 0;
+	padding: 5px;
 	background-color: var(--white);
 	width: 100%;
-}
-
-.navbar-light .navbar-brand {
-	color: var(--white);
 }
 
 .navbar-brand {
@@ -41,7 +44,7 @@ h2 {
 	font-weight: bolder;
 }
 
-main>.container {
+*main>.container {
 	padding: 60px 15px 0;
 }
 
@@ -55,7 +58,7 @@ main>.container {
 }
 
 .container {
-	padding: 20px;
+	padding: 0px;
 }
 
 .col-sm-12>.container {
@@ -79,35 +82,40 @@ main>.container {
 
 .border-primary {
 	border-width:2px !important;
-	border-color: var(--green) !important;
+	border-color: var(--green);
 }
 
 /* For mobile phones: */
 
-@media only screen and (max-width: 768px) {
+@media(max-width: 767px) {
+	nav {
+		padding: 5px;
+		background-color: var(--green);
+		width: 100%;
+	}
 	body {
 		background-color: var(--white);
 	}
-	.navbar {
-		background-color: var(--green);
-	}
-	/* First level buttons on the nav bar */
-	.nav-link {
-		background-color: var(--white);
-		text-indent: 20px;
-	}
+
+	.navbar.navbar-expand {
+        background-color: var(--green);
+    }
+
 	/* The toggle button */
 	.dropdown-toggle {
-		background-color: var(--gray);
+		background-color: #c1c1c1;
 	}
+	
 	/* Second level buttons on the nav bar */
 	.dropdown-item {
-		background-color: var(--white);
+		background-color: #c1c1c1;
 	}
+	
 	/* part of the background to the 2nd level buttons*/
 	.show {
-		background-color: var(--white);
+		background-color: #c1c1c1;
 	}
+	
 	.visualizations-row {
 		grid-template-columns: repeat(4, 1fr);
 	}
@@ -115,5 +123,9 @@ main>.container {
 	.comparison-row {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.background-green-navbar-sm{
+		background-color: var(--green);
 	}
 }
