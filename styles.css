@@ -7,6 +7,7 @@
 body {
 	background-color: var(--gray);
 	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size:1em;
 }
 
 a {
@@ -16,7 +17,13 @@ a {
 li {
 	color:#1c1c1c;
 }
-
+.page-text{
+    background:#FFFFFF;
+    padding-top:30px;
+    padding-bottom:10px;
+    padding-left:20px;
+    padding-right:20px;
+}
 .section-img{
     width:75%;
     display:block;
@@ -46,6 +53,12 @@ h2 {
 	padding: 5px;
 }
 
+h3{
+    color:#48D1CC;
+    font-weight:bold;
+    font-size:16px;
+    text-align:center;
+}
 .navbar {
 	padding: 5px;
 	background-color: var(--white);
@@ -62,7 +75,18 @@ h2 {
 *main>.container {
 	padding: 60px 15px 0;
 }
-
+.visual-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.visual-container .image {
+    width: 50%;
+}
+.visual-container img {
+    width: calc(100% - (20px * 2));
+    margin-left: 20px;
+    margin-right:20px;
+}
 .footer {
 	background-color: var(--green);
 }
@@ -108,27 +132,28 @@ h2 {
 		background-color: var(--green);
 		width: 100%;
 	}
+
+	.navbar.navbar-expand {
+		background-color: var(--green);
+	}
+
 	body {
 		background-color: var(--white);
 	}
 
-	.navbar.navbar-expand {
-        background-color: var(--green);
-    }
-
 	/* The toggle button */
 	.dropdown-toggle {
-		background-color: #c1c1c1;
+		background-color: var(--gray);
 	}
 	
 	/* Second level buttons on the nav bar */
 	.dropdown-item {
-		background-color: #c1c1c1;
+		background-color: var(--white);
 	}
 	
 	/* part of the background to the 2nd level buttons*/
 	.show {
-		background-color: #c1c1c1;
+		background-color: var(--white);
 	}
 	
 	.visualizations-row {
