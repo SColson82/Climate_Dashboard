@@ -72,7 +72,7 @@ h3{
 	font-weight: bolder;
 }
 
-*main>.container {
+main>.container {
 	padding: 60px 15px 0;
 }
 .visual-container {
@@ -80,12 +80,14 @@ h3{
     flex-wrap: wrap;
 }
 .visual-container .image {
-    width: 50%;
+	width: 50%;
+	grid-template-columns: repeat(2, 1fr);
 }
 .visual-container img {
-    width: calc(100% - (20px * 2));
+	width: calc(100% - (20px * 2));
     margin-left: 20px;
     margin-right:20px;
+	grid-template-columns: repeat(2, 1fr);
 }
 .footer {
 	background-color: var(--green);
@@ -160,7 +162,15 @@ h3{
 		grid-template-columns: repeat(4, 1fr);
 	}
 
-	.comparison-row {
+	.visual-container .image {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.visual-container img {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.visual-container> .image {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
 	}
@@ -168,4 +178,5 @@ h3{
 	.background-green-navbar-sm{
 		background-color: var(--green);
 	}
+
 }
