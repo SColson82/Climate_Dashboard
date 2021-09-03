@@ -75,20 +75,20 @@ h3{
 main>.container {
 	padding: 60px 15px 0;
 }
-.visual-container {
+/* .visual-container {
     display: flex;
     flex-wrap: wrap;
 }
 .visual-container .image {
 	width: 50%;
 	grid-template-columns: repeat(2, 1fr);
-}
-.visual-container img {
+} */
+/* .visual-container img {
 	width: calc(100% - (20px * 2));
     margin-left: 20px;
     margin-right:20px;
 	grid-template-columns: repeat(2, 1fr);
-}
+} */
 .footer {
 	background-color: var(--green);
 }
@@ -128,16 +128,16 @@ main>.container {
 
 /* For mobile phones: */
 
-@media(max-width: 767px) {
-	nav {
+@media(max-width: 768px) {
+	/* nav {
 		padding: 5px;
 		background-color: var(--green);
 		width: 100%;
-	}
+	} */
 
-	.navbar.navbar-expand {
+	/* .navbar.navbar-expand {
 		background-color: var(--green);
-	}
+	} */
 
 	body {
 		background-color: var(--white);
@@ -158,25 +158,27 @@ main>.container {
 		background-color: var(--white);
 	}
 	
+	/* This row is important */
 	.visualizations-row {
 		grid-template-columns: repeat(4, 1fr);
 	}
 
-	.visual-container .image {
+	/* .visual-container .image {
 		grid-template-columns: repeat(1, 1fr);
-	}
+	} */
 
-	.visual-container img {
+	/* .visual-container img {
 		grid-template-columns: repeat(1, 1fr);
-	}
+	} */
 
-	.visual-container> .image {
+	/* .visual-container> .image {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
-	}
+	} */
 
-	.background-green-navbar-sm{
+	/* This row is important */
+	.background-green-navbar-m{
 		background-color: var(--green);
-	}
+	} 
 
 }
