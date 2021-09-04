@@ -14,6 +14,12 @@ a {
 	color:#1c1c1c;
 }
 
+.sticky-col {
+	position: -webkit-sticky;
+	position: sticky;
+	background-color: white;
+  }
+
 li {
 	color:#1c1c1c;
 }
@@ -126,9 +132,14 @@ main>.container {
 	border-color: var(--green);
 }
 
+table>tbody>tr>td:nth-child(2) {
+	position: sticky; 
+	left:0;
+}
+
 /* For mobile phones: */
 
-@media(max-width: 768px) {
+@media(max-width: 767px) {
 	/* nav {
 		padding: 5px;
 		background-color: var(--green);
@@ -180,5 +191,8 @@ main>.container {
 	.background-green-navbar-m{
 		background-color: var(--green);
 	} 
+
+	.tabl 
+
 
 }
