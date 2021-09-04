@@ -81,20 +81,7 @@ h3{
 main>.container {
 	padding: 60px 15px 0;
 }
-/* .visual-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-.visual-container .image {
-	width: 50%;
-	grid-template-columns: repeat(2, 1fr);
-} */
-/* .visual-container img {
-	width: calc(100% - (20px * 2));
-    margin-left: 20px;
-    margin-right:20px;
-	grid-template-columns: repeat(2, 1fr);
-} */
+
 .footer {
 	background-color: var(--green);
 }
@@ -140,15 +127,6 @@ table>tbody>tr>td:nth-child(2) {
 /* For mobile phones: */
 
 @media(max-width: 767px) {
-	/* nav {
-		padding: 5px;
-		background-color: var(--green);
-		width: 100%;
-	} */
-
-	/* .navbar.navbar-expand {
-		background-color: var(--green);
-	} */
 
 	body {
 		background-color: var(--white);
@@ -173,19 +151,6 @@ table>tbody>tr>td:nth-child(2) {
 	.visualizations-row {
 		grid-template-columns: repeat(4, 1fr);
 	}
-
-	/* .visual-container .image {
-		grid-template-columns: repeat(1, 1fr);
-	} */
-
-	/* .visual-container img {
-		grid-template-columns: repeat(1, 1fr);
-	} */
-
-	/* .visual-container> .image {
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
-	} */
 
 	/* This row is important */
 	.background-green-navbar-m{
