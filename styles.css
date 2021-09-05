@@ -157,7 +157,11 @@ table>tbody>tr>td:nth-child(2) {
 		background-color: var(--green);
 	} 
 
-	.tabl 
+	table>thead {
+		position: sticky; 
+		top:0;
+		z-index: 9999;
+	}
 
 
 }
