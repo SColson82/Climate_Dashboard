@@ -27,3 +27,8 @@ The website itself will respond to the size of the screen that it is on so pleas
 
 
 🌟 For ease in navigating to the page, feel free to click on the click at the top (for small screen) or top right (for monitor) of this page. 
+<hr>
+Contact:
+
+* https://www.linkedin.com/in/sharon-colson-515222210/
+* sharon.colson@gmail.com
