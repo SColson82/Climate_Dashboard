@@ -30,5 +30,5 @@ The website itself will respond to the size of the screen that it is on so pleas
 <hr>
 Contact:
 
-* https://www.linkedin.com/in/sharon-colson-515222210/
+* https://www.linkedin.com/in/sharon-colson
 * sharon.colson@gmail.com
